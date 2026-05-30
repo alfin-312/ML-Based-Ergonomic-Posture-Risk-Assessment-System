@@ -1,0 +1,53 @@
+ML-Based Ergonomic Posture Risk Assessment — Training Report
+Dataset : c:\Users\alfin\OneDrive\Desktop\Mini Project\Mini_Project\data\posture_features_augmented.csv
+Samples : 110  |  Features: ['shoulder_angle', 'torso_angle', 'shoulder_distance', 'vertical_offset']
+
+============================================================
+  SVM (RBF kernel)
+============================================================
+5-Fold CV Accuracy : 1.0000 +/- 0.0000
+CV Fold Scores     : [np.float64(1.0), np.float64(1.0), np.float64(1.0), np.float64(1.0), np.float64(1.0)]
+Hold-out Accuracy  : 1.0000
+
+Classification Report:
+              precision    recall  f1-score   support
+
+Good Posture       1.00      1.00      1.00         8
+ Medium Risk       1.00      1.00      1.00         7
+   High Risk       1.00      1.00      1.00         7
+
+    accuracy                           1.00        22
+   macro avg       1.00      1.00      1.00        22
+weighted avg       1.00      1.00      1.00        22
+
+Confusion Matrix (rows=actual, cols=predicted):
+[[8 0 0]
+ [0 7 0]
+ [0 0 7]]
+
+============================================================
+  Random Forest
+============================================================
+5-Fold CV Accuracy : 1.0000 +/- 0.0000
+CV Fold Scores     : [np.float64(1.0), np.float64(1.0), np.float64(1.0), np.float64(1.0), np.float64(1.0)]
+Hold-out Accuracy  : 1.0000
+
+Classification Report:
+              precision    recall  f1-score   support
+
+Good Posture       1.00      1.00      1.00         8
+ Medium Risk       1.00      1.00      1.00         7
+   High Risk       1.00      1.00      1.00         7
+
+    accuracy                           1.00        22
+   macro avg       1.00      1.00      1.00        22
+weighted avg       1.00      1.00      1.00        22
+
+Confusion Matrix (rows=actual, cols=predicted):
+[[8 0 0]
+ [0 7 0]
+ [0 0 7]]
+
+Models saved:
+  SVM : c:\Users\alfin\OneDrive\Desktop\Mini Project\Mini_Project\models\posture_svm.pkl
+  RF  : c:\Users\alfin\OneDrive\Desktop\Mini Project\Mini_Project\models\posture_rf.pkl
